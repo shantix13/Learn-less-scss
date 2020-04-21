@@ -1,38 +1,24 @@
-// scss
-
-// $ - переменная
-
-$fz : 16px;
-$ff: Arial, Tahoma, sans-serif;
-
-@import 'reset'; // импортируем _reset.scss
-
-
-body{
-    position: relative;
-    font-size: $fz;
-    font-family: $ff;
+@mixin bradius($rad){
+    -webkit-border-radius: $rad;
+    border-radius: $rad;
 }
 
-h1{
-    font-size: $fz*2;
+$col: lightgrey;
+$w: 300px;
+
+.two{
+    color: $col;
+    width: 200px + $w;
 }
 
-h2{
-    font-size: $fz + 10px;
+
+.one{
+    @extend .two; // расширяем класс
+    @include bradius(6px);
+    width: $w/3;
 }
 
-nav{
-    color: red;
-    li{
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-        a{
-        font-style: $fz;
-        &:hover{
-            text-decoration: underline;
-        }
-        }
-    }
+.three{
+    color: $col + #222;
+    width: $w * 3;
 }

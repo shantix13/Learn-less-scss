@@ -1,35 +1,17 @@
-* {
-  margin: 0;
-  box-sizing: border-box;
+.two, .one {
+  color: lightgrey;
+  width: 500px;
 }
 
-body {
-  position: relative;
-  font-size: 16px;
-  font-family: Arial, Tahoma, sans-serif;
+.one {
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  width: 100px;
 }
 
-h1 {
-  font-size: 32px;
-}
-
-h2 {
-  font-size: 26px;
-}
-
-nav {
-  color: red;
-}
-nav li {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-nav li a {
-  font-style: 16px;
-}
-nav li a:hover {
-  text-decoration: underline;
+.three {
+  color: whitesmoke;
+  width: 900px;
 }
 
 /*# sourceMappingURL=style.css.map */
