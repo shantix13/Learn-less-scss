@@ -1,0 +1,38 @@
+// scss
+
+// $ - переменная
+
+$fz : 16px;
+$ff: Arial, Tahoma, sans-serif;
+
+@import 'reset'; // импортируем _reset.scss
+
+
+body{
+    position: relative;
+    font-size: $fz;
+    font-family: $ff;
+}
+
+h1{
+    font-size: $fz*2;
+}
+
+h2{
+    font-size: $fz + 10px;
+}
+
+nav{
+    color: red;
+    li{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        a{
+        font-style: $fz;
+        &:hover{
+            text-decoration: underline;
+        }
+        }
+    }
+}
