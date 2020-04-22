@@ -19,4 +19,21 @@
   border: 4px solid red;
 }
 
+.this-ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.this-ul li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.this-ul li a {
+  text-decoration: none;
+}
+.this-ul li span {
+  color: #ccc;
+}
+
 /*# sourceMappingURL=style.css.map */
