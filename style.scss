@@ -1,24 +1,28 @@
-@mixin bradius($rad){
-    -webkit-border-radius: $rad;
-    border-radius: $rad;
+// Это коммент
+
+$bgColor: #000;
+$color: #ccc;
+$blockWidth: 200px;
+$border: 4px solid red;
+
+*{
+    margin: 0;
+    padding: 0;
 }
 
-$col: lightgrey;
-$w: 300px;
-
-.two{
-    color: $col;
-    width: 200px + $w;
+.block:not(.first){
+    background-color: $bgColor;
+    height: 200px;
+    margin-bottom: 20px;
+    border: $border;
 }
 
-
-.one{
-    @extend .two; // расширяем класс
-    @include bradius(6px);
-    width: $w/3;
+.first{
+    height: 100px;
+    background-color: $bgColor;
+    margin-bottom: 200px;
+    color: $color;
+    width: $blockWidth;
+    border: $border;
 }
 
-.three{
-    color: $col + #222;
-    width: $w * 3;
-}
