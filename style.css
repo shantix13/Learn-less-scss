@@ -8,6 +8,7 @@
   height: 200px;
   margin-bottom: 20px;
   border: 4px solid red;
+  padding: 20px 40px 30px;
 }
 
 .first {
@@ -15,8 +16,8 @@
   background-color: #000;
   margin-bottom: 200px;
   color: #ccc;
-  width: 200px;
-  border: 4px solid red;
+  width: #fff;
+  border: 2px solid 300px;
 }
 
 .this-ul {
@@ -30,6 +31,10 @@
   padding: 0;
 }
 .this-ul li a {
+  font-size: 1.1em;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+  font-style: italic;
   text-decoration: none;
 }
 .this-ul li span {
